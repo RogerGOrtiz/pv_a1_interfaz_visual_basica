@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "pv_a1_interfazVisualBasica/1.0.0": {
+        "runtime": {
+          "pv_a1_interfazVisualBasica.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pv_a1_interfazVisualBasica/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
