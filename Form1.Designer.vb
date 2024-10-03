@@ -32,16 +32,19 @@ Partial Class Form1
         Me.ButtonContinuar = New System.Windows.Forms.Button()
         Me.ButtonTerminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        Me.BackColor = Color.LightBlue
         '
         'labelTitulo
         '
         Me.labelTitulo.AutoSize = True
-        Me.labelTitulo.Location = New System.Drawing.Point(258, 43)
+        Me.labelTitulo.Location = New System.Drawing.Point(158, 43)
         Me.labelTitulo.Name = "labelTitulo"
         Me.labelTitulo.Size = New System.Drawing.Size(252, 15)
         Me.labelTitulo.TabIndex = 0
         Me.labelTitulo.Text = "ACTIVIDAD 1 - INTERFACES VISUALES BASICAS"
-        Me.labelTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labelTitulo.Font = New Font("Arial", 14, FontStyle.Bold)
+        Me.labelTitulo.ForeColor = Color.DarkSlateBlue
+        Me.labelTitulo.TextAlign = ContentAlignment.MiddleCenter
         '
         'labelProbs
         '
@@ -84,6 +87,7 @@ Partial Class Form1
         Me.CheckedListMenu.Name = "CheckedListMenu"
         Me.CheckedListMenu.Size = New System.Drawing.Size(603, 94)
         Me.CheckedListMenu.TabIndex = 5
+        Me.CheckedListMenu.BorderStyle = BorderStyle.FixedSingle
         '
         'ListBox1
         '
@@ -94,24 +98,31 @@ Partial Class Form1
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(0, 4)
         Me.ListBox1.TabIndex = 6
+
         '
         'ButtonContinuar
         '
-        Me.ButtonContinuar.Location = New System.Drawing.Point(303, 368)
+        Me.ButtonContinuar.Location = New System.Drawing.Point(253, 368)
         Me.ButtonContinuar.Name = "ButtonContinuar"
-        Me.ButtonContinuar.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonContinuar.Size = New System.Drawing.Size(105, 33)
         Me.ButtonContinuar.TabIndex = 7
         Me.ButtonContinuar.Text = "Continuar"
         Me.ButtonContinuar.UseVisualStyleBackColor = True
+        Me.ButtonContinuar.BackColor = Color.LightGreen
+        Me.ButtonContinuar.ForeColor = Color.Black
+        Me.ButtonContinuar.Font = New Font("Arial", 10, FontStyle.Bold)
         '
         'ButtonTerminar
         '
         Me.ButtonTerminar.Location = New System.Drawing.Point(468, 368)
         Me.ButtonTerminar.Name = "ButtonTerminar"
-        Me.ButtonTerminar.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonTerminar.Size = New System.Drawing.Size(105, 33)
         Me.ButtonTerminar.TabIndex = 8
         Me.ButtonTerminar.Text = "Terminar"
         Me.ButtonTerminar.UseVisualStyleBackColor = True
+        Me.ButtonTerminar.BackColor = Color.LightCoral
+        Me.ButtonTerminar.ForeColor = Color.Black
+        Me.ButtonTerminar.Font = New Font("Arial", 10, FontStyle.Bold)
         '
         'Form1
         '

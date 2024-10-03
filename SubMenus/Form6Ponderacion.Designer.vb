@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form6Ponderacion
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form6Ponderacion
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.LabelEx1 = New System.Windows.Forms.Label()
@@ -41,15 +41,18 @@ Partial Class Form6Ponderacion
         Me.ButtonLimpiar = New System.Windows.Forms.Button()
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        Me.BackColor = Color.LightGray
         '
         'LabelTitulo
         '
         Me.LabelTitulo.AutoSize = True
-        Me.LabelTitulo.Location = New System.Drawing.Point(282, 33)
+        Me.LabelTitulo.Location = New Point((Me.ClientSize.Width - Me.LabelTitulo.Width) / 2, 40)
         Me.LabelTitulo.Name = "LabelTitulo"
         Me.LabelTitulo.Size = New System.Drawing.Size(284, 15)
         Me.LabelTitulo.TabIndex = 0
         Me.LabelTitulo.Text = "Calcular calificación final en base a una ponderación"
+        Me.LabelTitulo.Font = New Font("Arial", 12, FontStyle.Bold)
+        Me.LabelTitulo.ForeColor = Color.DarkSlateBlue
         '
         'LabelEx1
         '
@@ -165,6 +168,8 @@ Partial Class Form6Ponderacion
         Me.ButtonMenuPrincipal.TabIndex = 14
         Me.ButtonMenuPrincipal.Text = "Menu principal"
         Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
+        Me.ButtonMenuPrincipal.BackColor = Color.LightGreen
+        Me.ButtonMenuPrincipal.ForeColor = Color.Black
         '
         'ButtonCalcular
         '
@@ -174,6 +179,8 @@ Partial Class Form6Ponderacion
         Me.ButtonCalcular.TabIndex = 15
         Me.ButtonCalcular.Text = "Calcular"
         Me.ButtonCalcular.UseVisualStyleBackColor = True
+        Me.ButtonCalcular.BackColor = Color.LightBlue
+        Me.ButtonCalcular.ForeColor = Color.Black
         '
         'ButtonLimpiar
         '
@@ -183,14 +190,18 @@ Partial Class Form6Ponderacion
         Me.ButtonLimpiar.TabIndex = 16
         Me.ButtonLimpiar.Text = "LimpiarCampos"
         Me.ButtonLimpiar.UseVisualStyleBackColor = True
+        Me.ButtonLimpiar.BackColor = Color.LightCoral
+        Me.ButtonLimpiar.ForeColor = Color.Black
         '
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
-        Me.LabelResultado.Location = New System.Drawing.Point(375, 332)
         Me.LabelResultado.Name = "LabelResultado"
         Me.LabelResultado.Size = New System.Drawing.Size(0, 15)
         Me.LabelResultado.TabIndex = 17
+        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
+        Me.LabelResultado.ForeColor = Color.Black
+        Me.LabelResultado.Location = New Point((Me.ClientSize.Width - Me.LabelResultado.Width) / 2, 297)
         '
         'Form6Ponderacion
         '

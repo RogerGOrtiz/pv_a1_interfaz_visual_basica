@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form4NumParImpar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form4NumParImpar
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LabelTitulo = New System.Windows.Forms.Label()
         Me.LabelNumero = New System.Windows.Forms.Label()
@@ -31,15 +31,19 @@ Partial Class Form4NumParImpar
         Me.ButtonMenuPrincipal = New System.Windows.Forms.Button()
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        Me.BackColor = Color.LightGray
         '
         'LabelTitulo
         '
         Me.LabelTitulo.AutoSize = True
-        Me.LabelTitulo.Location = New System.Drawing.Point(304, 41)
         Me.LabelTitulo.Name = "LabelTitulo"
         Me.LabelTitulo.Size = New System.Drawing.Size(201, 15)
         Me.LabelTitulo.TabIndex = 0
         Me.LabelTitulo.Text = "Calcular si un numero es par o impar"
+        Me.LabelTitulo.Font = New Font("Arial", 16, FontStyle.Bold)
+        Me.LabelTitulo.ForeColor = Color.DarkBlue
+        Me.LabelTitulo.TextAlign = ContentAlignment.MiddleCenter
+        Me.LabelTitulo.Location = New Point((Me.ClientSize.Width - Me.LabelTitulo.Width) / 2, 40)
         '
         'LabelNumero
         '
@@ -56,6 +60,7 @@ Partial Class Form4NumParImpar
         Me.TextBoxNumero.Name = "TextBoxNumero"
         Me.TextBoxNumero.Size = New System.Drawing.Size(128, 23)
         Me.TextBoxNumero.TabIndex = 2
+        Me.TextBoxNumero.Font = New Font("Arial", 12, FontStyle.Regular)
         '
         'ButtonCalcular
         '
@@ -65,6 +70,8 @@ Partial Class Form4NumParImpar
         Me.ButtonCalcular.TabIndex = 3
         Me.ButtonCalcular.Text = "Calcular"
         Me.ButtonCalcular.UseVisualStyleBackColor = True
+        Me.ButtonCalcular.BackColor = Color.LightGreen
+        Me.ButtonCalcular.ForeColor = Color.Black
         '
         'ButtonLimpiar
         '
@@ -74,6 +81,8 @@ Partial Class Form4NumParImpar
         Me.ButtonLimpiar.TabIndex = 4
         Me.ButtonLimpiar.Text = "Limpiar campo"
         Me.ButtonLimpiar.UseVisualStyleBackColor = True
+        Me.ButtonLimpiar.BackColor = Color.LightCoral
+        Me.ButtonLimpiar.ForeColor = Color.Black
         '
         'Label1
         '
@@ -93,15 +102,19 @@ Partial Class Form4NumParImpar
         Me.ButtonMenuPrincipal.TabIndex = 9
         Me.ButtonMenuPrincipal.Text = "Menu principal"
         Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
+        Me.ButtonMenuPrincipal.BackColor = Color.LightBlue
         '
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
-        Me.LabelResultado.Location = New System.Drawing.Point(391, 297)
         Me.LabelResultado.Name = "LabelResultado"
         Me.LabelResultado.Size = New System.Drawing.Size(10, 15)
         Me.LabelResultado.TabIndex = 10
         Me.LabelResultado.Text = "l"
+        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
+        Me.LabelResultado.ForeColor = Color.Black
+        Me.LabelResultado.Location = New Point((Me.ClientSize.Width - Me.LabelResultado.Width) / 2, 297)
+
         '
         'Form4NumParImpar
         '
