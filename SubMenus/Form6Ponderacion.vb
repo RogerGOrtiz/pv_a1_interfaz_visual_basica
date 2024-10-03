@@ -9,7 +9,7 @@
         _examen2 = TextBoxExa2.Text
         _tarea = TextBoxTarea.Text
         _expoClase = TextBoxExpo.Text
-
+        Dim exa1, exa2, tarea, expoClase As Double
         Dim califExa1, califExa2, califTarea, califExpo, califFinal As Double
 
         If Not String.IsNullOrEmpty(_examen1) AndAlso Not String.IsNullOrWhiteSpace(_examen1) AndAlso
@@ -17,15 +17,21 @@
             Not String.IsNullOrEmpty(_tarea) AndAlso Not String.IsNullOrWhiteSpace(_tarea) AndAlso
             Not String.IsNullOrEmpty(_expoClase) AndAlso Not String.IsNullOrWhiteSpace(_expoClase) Then
 
-            califExa1 = _examen1 * 0.25
-            califExa2 = _examen2 * 0.35
-            califTarea = _tarea * 0.15
-            califExpo = _expoClase * 0.25
+            If Double.TryParse(_examen1, exa1) AndAlso Double.TryParse(_examen2, exa2) AndAlso
+                Double.TryParse(_tarea, tarea) AndAlso Double.TryParse(_expoClase, expoClase) Then
 
-            califFinal = califExa1 + califExa2 + califTarea + califExpo
+                califExa1 = _examen1 * 0.25
+                califExa2 = _examen2 * 0.35
+                califTarea = _tarea * 0.15
+                califExpo = _expoClase * 0.25
 
-            LabelResultado.Text = "La calificacion final es de " & califFinal
+                califFinal = califExa1 + califExa2 + califTarea + califExpo
 
+                LabelResultado.Text = "La calificacion final es de " & califFinal
+            Else
+                LabelResultado.Text = "No se pudo calcular la calificacion"
+                MessageBox.Show("Favor de ingresar un valor numerico en todos los campos")
+            End If
         Else
             LabelResultado.Text = "No se pudo calcular la calificacion"
             MessageBox.Show("Favor de ingresar un valor en todos los campos")

@@ -32,20 +32,18 @@ Partial Class Form3NumeroMayor
         Me.ButtonMenuPrincipal = New System.Windows.Forms.Button()
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        Me.BackColor = Color.LightGray
         '
         'LabelTitulo
         '
         Me.LabelTitulo.AutoSize = True
-        Me.LabelTitulo.Location = New System.Drawing.Point(271, 34)
-        Me.LabelTitulo.Location = New Point((Me.ClientSize.Width - Me.LabelTitulo.Width) / 2, 40)
+        Me.LabelTitulo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelTitulo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.LabelTitulo.Location = New System.Drawing.Point(50, 25)
         Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.Size = New System.Drawing.Size(273, 15)
+        Me.LabelTitulo.Size = New System.Drawing.Size(390, 19)
         Me.LabelTitulo.TabIndex = 2
         Me.LabelTitulo.Text = "Calcular el número mayor de una lista de numeros"
         Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.LabelTitulo.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelTitulo.ForeColor = Color.DarkBlue
         '
         'LabelLista
         '
@@ -59,41 +57,41 @@ Partial Class Form3NumeroMayor
         'LabelNota
         '
         Me.LabelNota.AutoSize = True
+        Me.LabelNota.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
+        Me.LabelNota.ForeColor = System.Drawing.Color.Gray
         Me.LabelNota.Location = New System.Drawing.Point(187, 94)
         Me.LabelNota.Name = "LabelNota"
-        Me.LabelNota.Size = New System.Drawing.Size(318, 15)
+        Me.LabelNota.Size = New System.Drawing.Size(388, 16)
         Me.LabelNota.TabIndex = 4
         Me.LabelNota.Text = "NOTA: Ingresar la lista de numeros separados por comas "","""
-        Me.LabelNota.Font = New Font("Arial", 10, FontStyle.Italic)
-        Me.LabelNota.ForeColor = Color.Gray
         '
         'TextBoxLista
         '
+        Me.TextBoxLista.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBoxLista.Location = New System.Drawing.Point(353, 122)
         Me.TextBoxLista.Name = "TextBoxLista"
         Me.TextBoxLista.Size = New System.Drawing.Size(283, 23)
         Me.TextBoxLista.TabIndex = 5
-        Me.TextBoxLista.Font = New Font("Arial", 10, FontStyle.Regular)
         '
         'ButtonCalcular
         '
+        Me.ButtonCalcular.BackColor = System.Drawing.Color.LightGreen
         Me.ButtonCalcular.Location = New System.Drawing.Point(414, 187)
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(75, 23)
         Me.ButtonCalcular.TabIndex = 6
         Me.ButtonCalcular.Text = "Calcular"
-        Me.ButtonCalcular.UseVisualStyleBackColor = True
-        Me.ButtonCalcular.BackColor = Color.LightGreen
+        Me.ButtonCalcular.UseVisualStyleBackColor = False
         '
         'ButtonLimpiar
         '
+        Me.ButtonLimpiar.BackColor = System.Drawing.Color.LightCoral
         Me.ButtonLimpiar.Location = New System.Drawing.Point(518, 187)
         Me.ButtonLimpiar.Name = "ButtonLimpiar"
         Me.ButtonLimpiar.Size = New System.Drawing.Size(106, 23)
         Me.ButtonLimpiar.TabIndex = 7
         Me.ButtonLimpiar.Text = "Limpiar campos"
-        Me.ButtonLimpiar.UseVisualStyleBackColor = True
-        Me.ButtonLimpiar.BackColor = Color.LightCoral
+        Me.ButtonLimpiar.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -107,28 +105,29 @@ Partial Class Form3NumeroMayor
         '
         'ButtonMenuPrincipal
         '
+        Me.ButtonMenuPrincipal.BackColor = System.Drawing.Color.LightBlue
         Me.ButtonMenuPrincipal.Location = New System.Drawing.Point(335, 403)
         Me.ButtonMenuPrincipal.Name = "ButtonMenuPrincipal"
         Me.ButtonMenuPrincipal.Size = New System.Drawing.Size(124, 23)
         Me.ButtonMenuPrincipal.TabIndex = 9
         Me.ButtonMenuPrincipal.Text = "Menu principal"
-        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
-        Me.ButtonMenuPrincipal.BackColor = Color.LightBlue
+        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = False
         '
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
+        Me.LabelResultado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelResultado.ForeColor = System.Drawing.Color.Black
+        Me.LabelResultado.Location = New System.Drawing.Point(237, 240)
         Me.LabelResultado.Name = "LabelResultado"
-        Me.LabelResultado.Size = New System.Drawing.Size(0, 15)
+        Me.LabelResultado.Size = New System.Drawing.Size(0, 19)
         Me.LabelResultado.TabIndex = 10
-        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelResultado.ForeColor = Color.Black
-        Me.LabelResultado.Location = New Point(353, 256)
         '
         'Form3NumeroMayor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.LabelResultado)
         Me.Controls.Add(Me.ButtonMenuPrincipal)

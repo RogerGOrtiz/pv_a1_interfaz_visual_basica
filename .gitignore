@@ -1,0 +1,33 @@
+# Archivos de build
+bin/
+obj/
+
+# Archivos de Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.csproj.user
+*.vbproj.user
+
+# Paquetes NuGet
+packages/
+*.nupkg
+# Paquetes NuGet descargados
+**/packages/*
+!**/packages/build/
+
+# Archivos de configuración de usuario
+*.swp
+*.tmp
+*.log
+*.lock
+*.cache
+*.pid
+*.old
+*.orig
+
+# Archivos generados por la plataforma
+_ReSharper*/

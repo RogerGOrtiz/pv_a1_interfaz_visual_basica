@@ -15,7 +15,9 @@ Public Class Form1
                 End If
             Next
         Else
-            _selectCheckValue = Nothing
+            If e.CurrentValue = CheckState.Checked AndAlso _selectCheckValue = e.Index Then
+                _selectCheckValue = Nothing
+            End If
         End If
     End Sub
 

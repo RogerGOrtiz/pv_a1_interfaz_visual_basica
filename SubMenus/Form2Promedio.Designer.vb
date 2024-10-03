@@ -33,29 +33,28 @@ Partial Class Form2Promedio
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.ButtonLimpiar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        Me.BackColor = Color.LightGray
         '
         'ButtonMenuPrincipal
         '
+        Me.ButtonMenuPrincipal.BackColor = System.Drawing.Color.LightBlue
         Me.ButtonMenuPrincipal.Location = New System.Drawing.Point(353, 396)
         Me.ButtonMenuPrincipal.Name = "ButtonMenuPrincipal"
         Me.ButtonMenuPrincipal.Size = New System.Drawing.Size(124, 23)
         Me.ButtonMenuPrincipal.TabIndex = 0
         Me.ButtonMenuPrincipal.Text = "Menu principal"
-        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
-        Me.ButtonMenuPrincipal.BackColor = Color.LightBlue
+        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = False
         '
         'LabelTitulo
         '
         Me.LabelTitulo.AutoSize = True
+        Me.LabelTitulo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelTitulo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.LabelTitulo.Location = New System.Drawing.Point(50, 50)
         Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.Size = New System.Drawing.Size(316, 15)
+        Me.LabelTitulo.Size = New System.Drawing.Size(448, 19)
         Me.LabelTitulo.TabIndex = 1
         Me.LabelTitulo.Text = "Calcular el promedio de un grupo para una misma materia"
-        Me.LabelTitulo.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelTitulo.ForeColor = Color.DarkBlue
-        Me.LabelTitulo.TextAlign = ContentAlignment.MiddleCenter
-        Me.LabelTitulo.Location = New Point((Me.ClientSize.Width - Me.LabelTitulo.Width) / 52, 40)
+        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TextBoxNumEstudiantes
         '
@@ -91,13 +90,13 @@ Partial Class Form2Promedio
         '
         'ButtonCalcular
         '
+        Me.ButtonCalcular.BackColor = System.Drawing.Color.LightGreen
         Me.ButtonCalcular.Location = New System.Drawing.Point(475, 188)
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(75, 23)
         Me.ButtonCalcular.TabIndex = 6
         Me.ButtonCalcular.Text = "Calcular"
-        Me.ButtonCalcular.UseVisualStyleBackColor = True
-        Me.ButtonCalcular.BackColor = Color.LightGreen
+        Me.ButtonCalcular.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -112,27 +111,28 @@ Partial Class Form2Promedio
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
-        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelResultado.ForeColor = Color.Black
-        Me.LabelResultado.Location = New Point(237, 240)
+        Me.LabelResultado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelResultado.ForeColor = System.Drawing.Color.Black
+        Me.LabelResultado.Location = New System.Drawing.Point(237, 240)
         Me.LabelResultado.Name = "LabelResultado"
-        Me.LabelResultado.Size = New System.Drawing.Size(0, 15)
+        Me.LabelResultado.Size = New System.Drawing.Size(0, 19)
         Me.LabelResultado.TabIndex = 8
         '
         'ButtonLimpiar
         '
+        Me.ButtonLimpiar.BackColor = System.Drawing.Color.LightCoral
         Me.ButtonLimpiar.Location = New System.Drawing.Point(575, 188)
         Me.ButtonLimpiar.Name = "ButtonLimpiar"
         Me.ButtonLimpiar.Size = New System.Drawing.Size(116, 23)
         Me.ButtonLimpiar.TabIndex = 9
         Me.ButtonLimpiar.Text = "Limpiar Campos"
-        Me.ButtonLimpiar.UseVisualStyleBackColor = True
-        Me.ButtonLimpiar.BackColor = Color.LightCoral
+        Me.ButtonLimpiar.UseVisualStyleBackColor = False
         '
         'Form2Promedio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ButtonLimpiar)
         Me.Controls.Add(Me.LabelResultado)

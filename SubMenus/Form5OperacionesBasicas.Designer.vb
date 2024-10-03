@@ -35,18 +35,17 @@ Partial Class Form5OperacionesBasicas
         Me.ButtonLimpiar = New System.Windows.Forms.Button()
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        Me.BackColor = Color.LightGray
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.DarkBlue
+        Me.Label1.Location = New System.Drawing.Point(50, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(298, 15)
+        Me.Label1.Size = New System.Drawing.Size(579, 26)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Realizar el calculo de las cuatro operaciones aritméticas"
-        Me.Label1.Font = New Font("Arial", 16, FontStyle.Bold)
-        Me.Label1.ForeColor = Color.DarkBlue
-        Me.Label1.Location = New Point((Me.ClientSize.Width - Me.Label1.Width) / 72, 40)
         '
         'ComboBoxTipoOp
         '
@@ -60,13 +59,13 @@ Partial Class Form5OperacionesBasicas
         '
         'ButtonMenuPrincipal
         '
+        Me.ButtonMenuPrincipal.BackColor = System.Drawing.Color.LightBlue
         Me.ButtonMenuPrincipal.Location = New System.Drawing.Point(338, 396)
         Me.ButtonMenuPrincipal.Name = "ButtonMenuPrincipal"
         Me.ButtonMenuPrincipal.Size = New System.Drawing.Size(124, 23)
         Me.ButtonMenuPrincipal.TabIndex = 2
         Me.ButtonMenuPrincipal.Text = "Menu principal"
-        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
-        Me.ButtonMenuPrincipal.BackColor = Color.LightBlue
+        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -89,19 +88,19 @@ Partial Class Form5OperacionesBasicas
         '
         'TextBoxNum1
         '
+        Me.TextBoxNum1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBoxNum1.Location = New System.Drawing.Point(253, 116)
         Me.TextBoxNum1.Name = "TextBoxNum1"
-        Me.TextBoxNum1.Size = New System.Drawing.Size(100, 23)
+        Me.TextBoxNum1.Size = New System.Drawing.Size(100, 26)
         Me.TextBoxNum1.TabIndex = 10
-        Me.TextBoxNum1.Font = New Font("Arial", 12, FontStyle.Regular)
         '
         'TextBoxNum2
         '
+        Me.TextBoxNum2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBoxNum2.Location = New System.Drawing.Point(427, 116)
         Me.TextBoxNum2.Name = "TextBoxNum2"
-        Me.TextBoxNum2.Size = New System.Drawing.Size(100, 23)
+        Me.TextBoxNum2.Size = New System.Drawing.Size(100, 26)
         Me.TextBoxNum2.TabIndex = 11
-        Me.TextBoxNum2.Font = New Font("Arial", 12, FontStyle.Regular)
         '
         'LabelNum1
         '
@@ -123,41 +122,41 @@ Partial Class Form5OperacionesBasicas
         '
         'ButtonCalcular
         '
+        Me.ButtonCalcular.BackColor = System.Drawing.Color.LightGreen
+        Me.ButtonCalcular.ForeColor = System.Drawing.Color.Black
         Me.ButtonCalcular.Location = New System.Drawing.Point(412, 247)
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(75, 23)
         Me.ButtonCalcular.TabIndex = 14
         Me.ButtonCalcular.Text = "Calcular"
-        Me.ButtonCalcular.UseVisualStyleBackColor = True
-        Me.ButtonCalcular.BackColor = Color.LightGreen
-        Me.ButtonCalcular.ForeColor = Color.Black
+        Me.ButtonCalcular.UseVisualStyleBackColor = False
         '
         'ButtonLimpiar
         '
+        Me.ButtonLimpiar.BackColor = System.Drawing.Color.LightCoral
+        Me.ButtonLimpiar.ForeColor = System.Drawing.Color.Black
         Me.ButtonLimpiar.Location = New System.Drawing.Point(548, 247)
         Me.ButtonLimpiar.Name = "ButtonLimpiar"
         Me.ButtonLimpiar.Size = New System.Drawing.Size(115, 23)
         Me.ButtonLimpiar.TabIndex = 15
         Me.ButtonLimpiar.Text = "Limpiar campos"
-        Me.ButtonLimpiar.UseVisualStyleBackColor = True
-        Me.ButtonLimpiar.BackColor = Color.LightCoral
-        Me.ButtonLimpiar.ForeColor = Color.Black
+        Me.ButtonLimpiar.UseVisualStyleBackColor = False
         '
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
-        Me.LabelResultado.Location = New System.Drawing.Point(359, 332)
+        Me.LabelResultado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelResultado.ForeColor = System.Drawing.Color.Black
+        Me.LabelResultado.Location = New System.Drawing.Point(237, 290)
         Me.LabelResultado.Name = "LabelResultado"
-        Me.LabelResultado.Size = New System.Drawing.Size(0, 15)
+        Me.LabelResultado.Size = New System.Drawing.Size(0, 19)
         Me.LabelResultado.TabIndex = 16
-        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelResultado.ForeColor = Color.Black
-        Me.LabelResultado.Location = New Point((Me.ClientSize.Width - Me.LabelResultado.Width) / 2, 332)
         '
         'Form5OperacionesBasicas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.LabelResultado)
         Me.Controls.Add(Me.ButtonLimpiar)

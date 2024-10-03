@@ -31,19 +31,18 @@ Partial Class Form4NumParImpar
         Me.ButtonMenuPrincipal = New System.Windows.Forms.Button()
         Me.LabelResultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        Me.BackColor = Color.LightGray
         '
         'LabelTitulo
         '
         Me.LabelTitulo.AutoSize = True
+        Me.LabelTitulo.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelTitulo.ForeColor = System.Drawing.Color.DarkBlue
+        Me.LabelTitulo.Location = New System.Drawing.Point(50, 25)
         Me.LabelTitulo.Name = "LabelTitulo"
-        Me.LabelTitulo.Size = New System.Drawing.Size(201, 15)
+        Me.LabelTitulo.Size = New System.Drawing.Size(385, 26)
         Me.LabelTitulo.TabIndex = 0
         Me.LabelTitulo.Text = "Calcular si un numero es par o impar"
-        Me.LabelTitulo.Font = New Font("Arial", 16, FontStyle.Bold)
-        Me.LabelTitulo.ForeColor = Color.DarkBlue
-        Me.LabelTitulo.TextAlign = ContentAlignment.MiddleCenter
-        Me.LabelTitulo.Location = New Point((Me.ClientSize.Width - Me.LabelTitulo.Width) / 2, 40)
+        Me.LabelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LabelNumero
         '
@@ -56,33 +55,33 @@ Partial Class Form4NumParImpar
         '
         'TextBoxNumero
         '
+        Me.TextBoxNumero.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBoxNumero.Location = New System.Drawing.Point(337, 105)
         Me.TextBoxNumero.Name = "TextBoxNumero"
-        Me.TextBoxNumero.Size = New System.Drawing.Size(128, 23)
+        Me.TextBoxNumero.Size = New System.Drawing.Size(128, 26)
         Me.TextBoxNumero.TabIndex = 2
-        Me.TextBoxNumero.Font = New Font("Arial", 12, FontStyle.Regular)
         '
         'ButtonCalcular
         '
+        Me.ButtonCalcular.BackColor = System.Drawing.Color.LightGreen
+        Me.ButtonCalcular.ForeColor = System.Drawing.Color.Black
         Me.ButtonCalcular.Location = New System.Drawing.Point(390, 176)
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(75, 23)
         Me.ButtonCalcular.TabIndex = 3
         Me.ButtonCalcular.Text = "Calcular"
-        Me.ButtonCalcular.UseVisualStyleBackColor = True
-        Me.ButtonCalcular.BackColor = Color.LightGreen
-        Me.ButtonCalcular.ForeColor = Color.Black
+        Me.ButtonCalcular.UseVisualStyleBackColor = False
         '
         'ButtonLimpiar
         '
+        Me.ButtonLimpiar.BackColor = System.Drawing.Color.LightCoral
+        Me.ButtonLimpiar.ForeColor = System.Drawing.Color.Black
         Me.ButtonLimpiar.Location = New System.Drawing.Point(486, 176)
         Me.ButtonLimpiar.Name = "ButtonLimpiar"
         Me.ButtonLimpiar.Size = New System.Drawing.Size(100, 23)
         Me.ButtonLimpiar.TabIndex = 4
         Me.ButtonLimpiar.Text = "Limpiar campo"
-        Me.ButtonLimpiar.UseVisualStyleBackColor = True
-        Me.ButtonLimpiar.BackColor = Color.LightCoral
-        Me.ButtonLimpiar.ForeColor = Color.Black
+        Me.ButtonLimpiar.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -96,30 +95,29 @@ Partial Class Form4NumParImpar
         '
         'ButtonMenuPrincipal
         '
+        Me.ButtonMenuPrincipal.BackColor = System.Drawing.Color.LightBlue
         Me.ButtonMenuPrincipal.Location = New System.Drawing.Point(341, 401)
         Me.ButtonMenuPrincipal.Name = "ButtonMenuPrincipal"
         Me.ButtonMenuPrincipal.Size = New System.Drawing.Size(124, 23)
         Me.ButtonMenuPrincipal.TabIndex = 9
         Me.ButtonMenuPrincipal.Text = "Menu principal"
-        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = True
-        Me.ButtonMenuPrincipal.BackColor = Color.LightBlue
+        Me.ButtonMenuPrincipal.UseVisualStyleBackColor = False
         '
         'LabelResultado
         '
         Me.LabelResultado.AutoSize = True
+        Me.LabelResultado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelResultado.ForeColor = System.Drawing.Color.Black
+        Me.LabelResultado.Location = New System.Drawing.Point(237, 240)
         Me.LabelResultado.Name = "LabelResultado"
-        Me.LabelResultado.Size = New System.Drawing.Size(10, 15)
+        Me.LabelResultado.Size = New System.Drawing.Size(0, 19)
         Me.LabelResultado.TabIndex = 10
-        Me.LabelResultado.Text = "l"
-        Me.LabelResultado.Font = New Font("Arial", 12, FontStyle.Bold)
-        Me.LabelResultado.ForeColor = Color.Black
-        Me.LabelResultado.Location = New Point((Me.ClientSize.Width - Me.LabelResultado.Width) / 2, 297)
-
         '
         'Form4NumParImpar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.LabelResultado)
         Me.Controls.Add(Me.ButtonMenuPrincipal)

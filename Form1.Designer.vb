@@ -32,19 +32,18 @@ Partial Class Form1
         Me.ButtonContinuar = New System.Windows.Forms.Button()
         Me.ButtonTerminar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        Me.BackColor = Color.LightBlue
         '
         'labelTitulo
         '
         Me.labelTitulo.AutoSize = True
+        Me.labelTitulo.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.labelTitulo.ForeColor = System.Drawing.Color.DarkSlateBlue
         Me.labelTitulo.Location = New System.Drawing.Point(158, 43)
         Me.labelTitulo.Name = "labelTitulo"
-        Me.labelTitulo.Size = New System.Drawing.Size(252, 15)
+        Me.labelTitulo.Size = New System.Drawing.Size(457, 22)
         Me.labelTitulo.TabIndex = 0
         Me.labelTitulo.Text = "ACTIVIDAD 1 - INTERFACES VISUALES BASICAS"
-        Me.labelTitulo.Font = New Font("Arial", 14, FontStyle.Bold)
-        Me.labelTitulo.ForeColor = Color.DarkSlateBlue
-        Me.labelTitulo.TextAlign = ContentAlignment.MiddleCenter
+        Me.labelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'labelProbs
         '
@@ -81,13 +80,13 @@ Partial Class Form1
         '
         'CheckedListMenu
         '
+        Me.CheckedListMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CheckedListMenu.FormattingEnabled = True
         Me.CheckedListMenu.Items.AddRange(New Object() {"Calcular el promedio de un grupo para una misma materia.", "Calcular el numero mayor de una lista de números.", "Calcular si un numero es par o impar.", "Realizar el calculo de las cuatro operaciones aritméticas.", "Calcular calificación final en base a una ponderación."})
         Me.CheckedListMenu.Location = New System.Drawing.Point(94, 145)
         Me.CheckedListMenu.Name = "CheckedListMenu"
-        Me.CheckedListMenu.Size = New System.Drawing.Size(603, 94)
+        Me.CheckedListMenu.Size = New System.Drawing.Size(603, 92)
         Me.CheckedListMenu.TabIndex = 5
-        Me.CheckedListMenu.BorderStyle = BorderStyle.FixedSingle
         '
         'ListBox1
         '
@@ -98,36 +97,36 @@ Partial Class Form1
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(0, 4)
         Me.ListBox1.TabIndex = 6
-
         '
         'ButtonContinuar
         '
+        Me.ButtonContinuar.BackColor = System.Drawing.Color.LightGreen
+        Me.ButtonContinuar.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonContinuar.ForeColor = System.Drawing.Color.Black
         Me.ButtonContinuar.Location = New System.Drawing.Point(253, 368)
         Me.ButtonContinuar.Name = "ButtonContinuar"
         Me.ButtonContinuar.Size = New System.Drawing.Size(105, 33)
         Me.ButtonContinuar.TabIndex = 7
         Me.ButtonContinuar.Text = "Continuar"
-        Me.ButtonContinuar.UseVisualStyleBackColor = True
-        Me.ButtonContinuar.BackColor = Color.LightGreen
-        Me.ButtonContinuar.ForeColor = Color.Black
-        Me.ButtonContinuar.Font = New Font("Arial", 10, FontStyle.Bold)
+        Me.ButtonContinuar.UseVisualStyleBackColor = False
         '
         'ButtonTerminar
         '
+        Me.ButtonTerminar.BackColor = System.Drawing.Color.LightCoral
+        Me.ButtonTerminar.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonTerminar.ForeColor = System.Drawing.Color.Black
         Me.ButtonTerminar.Location = New System.Drawing.Point(468, 368)
         Me.ButtonTerminar.Name = "ButtonTerminar"
         Me.ButtonTerminar.Size = New System.Drawing.Size(105, 33)
         Me.ButtonTerminar.TabIndex = 8
         Me.ButtonTerminar.Text = "Terminar"
-        Me.ButtonTerminar.UseVisualStyleBackColor = True
-        Me.ButtonTerminar.BackColor = Color.LightCoral
-        Me.ButtonTerminar.ForeColor = Color.Black
-        Me.ButtonTerminar.Font = New Font("Arial", 10, FontStyle.Bold)
+        Me.ButtonTerminar.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ButtonTerminar)
         Me.Controls.Add(Me.ButtonContinuar)
